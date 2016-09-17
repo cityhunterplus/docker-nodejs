@@ -1,0 +1,7 @@
+nodejs:
+    build: nodejs
+    ports:
+        - "8020:80"
+    volumes:
+        - ./html:/var/www/html
+        - ./000-default.conf:/etc/apache2/sites-available/000-default.conf
